@@ -119,9 +119,8 @@ HomeApplication::HomeApplication(int &argc, char **argv, const QString &qmlPath)
 
     m_screenshotService = new ScreenshotService(this);
     new ScreenshotServiceAdaptor(m_screenshotService);
-    QDBusConnection sessionBus = QDBusConnection::sessionBus();
 
-    registerDBusObject(sessionBus, LIPSTICK_DBUS_SCREENSHOT_PATH, m_screenshotService);
+    registerDBusObject(systemBus, LIPSTICK_DBUS_SCREENSHOT_PATH, m_screenshotService);
 
     // Setting up the context and engine things
     qmlEngine->rootContext()->setContextProperty("initialSize", QGuiApplication::primaryScreen()->size());

@@ -15,5 +15,5 @@ else
 fi
 
 sleep "${DELAY}"
-dbus-send --type=method_call --dest=org.nemomobile.lipstick /org/nemomobile/lipstick/screenshot org.nemomobile.lipstick.saveScreenshot "string:${SCREENSHOTPATH}"
+dbus-send --system --type=method_call --dest=org.nemomobile.lipstick /org/nemomobile/lipstick/screenshot org.nemomobile.lipstick.saveScreenshot "string:${SCREENSHOTPATH}"
 notificationtool -o add -c device.added "" "" "" "Screenshot saved to $SCREENSHOTPATH"
