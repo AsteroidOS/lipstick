@@ -77,6 +77,7 @@ signals:
     void passkeyChanged();
 
 private:
+    QDBusInterface *m_mceDbus;
     QString mPath;
     HomeWindow *window;
     State state;
