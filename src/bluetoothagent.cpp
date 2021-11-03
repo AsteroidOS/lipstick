@@ -17,6 +17,7 @@
 
 #include <QDBusInterface>
 #include <QDBusPendingCall>
+#include <QDBusVariant>
 #include <QGuiApplication>
 #include <QQmlContext>
 #include <QScreen>
@@ -32,6 +33,7 @@
 
 BluetoothAgent::BluetoothAgent(QObject *parent) : QObject(parent), window(0)
 {
+    m_mceDbus = new QDBusInterface("com.nokia.mce", "/com/nokia/mce/request", "com.nokia.mce.request", QDBusConnection::systemBus());
     QDBusConnection bus = QDBusConnection::systemBus();
     mPath = "/org/nemomobile/lipstick/agent";
     bus.registerObject(mPath, this, QDBusConnection::ExportAllSlots | QDBusConnection::ExportAllProperties);
@@ -139,10 +141,16 @@ void BluetoothAgent::setWindowVisible(bool visible)
 
         if (!window->isVisible()) {
             window->show();
+            m_mceDbus->asyncCall("set_config", QDBusObjectPath("/system/osso/dsm/display/inhibit_blank_mode").path(), QVariant::fromValue(QDBusVariant(3)));
+            m_mceDbus->asyncCall("req_tklock_mode_change", "unlocked");
+            m_mceDbus->asyncCall("set_config", QDBusObjectPath("/system/osso/dsm/locks/tklock_blank_disable").path(), QVariant::fromValue(QDBusVariant(1)));
             emit windowVisibleChanged();
         }
     } else if (window != 0 && window->isVisible()) {
         window->hide();
+        m_mceDbus->asyncCall("set_config", QDBusObjectPath("/system/osso/dsm/display/inhibit_blank_mode").path(), QVariant::fromValue(QDBusVariant(0)));
+        m_mceDbus->asyncCall("req_tklock_mode_change", "locked");
+        m_mceDbus->asyncCall("set_config", QDBusObjectPath("/system/osso/dsm/locks/tklock_blank_disable").path(), QVariant::fromValue(QDBusVariant(0)));
         emit windowVisibleChanged();
     }
 }
