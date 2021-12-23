@@ -113,7 +113,7 @@
         <location filename="../src/usbmodeselector.cpp" line="127"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="180"/>
         <source>USB cable disconnected</source>
-        <translation>تم فصل  كابل اليو إس بي</translation>
+        <translation>تم فصل كابل اليو إس بي</translation>
     </message>
     <message id="qtn_usb_connection_sharing_active">
         <location filename="../src/usbmodeselector.cpp" line="132"/>
