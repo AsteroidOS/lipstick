@@ -158,6 +158,7 @@ void USBModeSelector::showNotification(QString mode)
 
     NotificationManager *manager = NotificationManager::instance();
     QVariantHash hints;
+    hints.insert(NotificationManager::HINT_URGENCY, 3);
     hints.insert(NotificationManager::HINT_CATEGORY, category);
     hints.insert(NotificationManager::HINT_PREVIEW_BODY, body);
     manager->CloseNotification(prevNotifId, NotificationManager::CloseNotificationCalled);

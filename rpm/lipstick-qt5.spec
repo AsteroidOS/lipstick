@@ -25,6 +25,7 @@ BuildRequires:  pkgconfig(Qt5Sensors)
 BuildRequires:  pkgconfig(contentaction5)
 BuildRequires:  pkgconfig(mlite5) >= 0.0.6
 BuildRequires:  pkgconfig(mce) >= 1.16.0
+BuildRequires:  pkgconfig(mce-qt5) >= 1.2.0
 BuildRequires:  pkgconfig(keepalive)
 BuildRequires:  pkgconfig(dsme_dbus_if) >= 0.63.2
 BuildRequires:  pkgconfig(thermalmanager_dbus_if)
@@ -33,7 +34,6 @@ BuildRequires:  pkgconfig(dbus-1)
 BuildRequires:  pkgconfig(dbus-glib-1)
 BuildRequires:  pkgconfig(libresourceqt5)
 BuildRequires:  pkgconfig(ngf-qt5)
-BuildRequires:  pkgconfig(contextkit-statefs) >= 0.2.7
 BuildRequires:  pkgconfig(systemd)
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(usb-moded-qt5) >= 1.1
