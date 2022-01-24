@@ -68,7 +68,6 @@ LipstickCompositor::LipstickCompositor()
 {
     m_window = new QQuickWindow();
     m_window->setColor(Qt::black);
-    m_window->setVisible(true);
 
     m_output = new QWaylandQuickOutput(this, m_window);
     m_output->setSizeFollowsWindow(true);
@@ -611,6 +610,7 @@ void LipstickCompositor::reactOnDisplayStateChanges(MeeGo::QmDisplayState::Displ
     }
 
     if (state == MeeGo::QmDisplayState::On) {
+        m_window->setVisible(true);
         emit displayOn();
     } else if (state == MeeGo::QmDisplayState::Off) {
         QCoreApplication::postEvent(this, new QTouchEvent(QEvent::TouchCancel));
