@@ -32,7 +32,7 @@
     <message id="qtn_ener_repcharger">
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
-        <translation>Lading ikke startet. Erstatt lader.</translation>
+        <translation>Lader ikke. Juster eller koble til lader.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
