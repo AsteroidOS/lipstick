@@ -706,6 +706,12 @@ void LipstickCompositor::setAmbientEnabled(bool enabled)
         QGuiApplication::platformNativeInterface()->nativeResourceForIntegration("AmbientDisable");
     }
     emit ambientEnabledChanged();
+
+    // Make window visible.
+    reactOnDisplayStateChanges(MeeGo::QmDisplayState::On);
+    // Fire events because enabled changes are not incorporated in above function.
+    emit displayAmbientChanged();
+    emit displayAmbientLeft();
 }
 
 void LipstickCompositor::scheduleAmbientUpdate()
