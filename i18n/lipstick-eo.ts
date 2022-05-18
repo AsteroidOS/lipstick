@@ -6,7 +6,7 @@
     <message id="qtn_ap_lipstick">
         <location filename="../src/homeapplication.cpp" line="78"/>
         <source>System</source>
-        <translation type="unfinished"></translation>
+        <translation>Sistemo</translation>
     </message>
     <message id="qtn_ener_charging">
         <location filename="../src/notifications/batterynotifier.cpp" line="212"/>
@@ -15,13 +15,13 @@
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="181"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="258"/>
         <source>Charging</source>
-        <translation type="unfinished"></translation>
+        <translation>Ŝargante</translation>
     </message>
     <message id="qtn_ener_charcomp">
         <location filename="../src/notifications/batterynotifier.cpp" line="216"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="114"/>
         <source>Charging complete</source>
-        <translation type="unfinished"></translation>
+        <translation>Ŝargado finiĝis</translation>
     </message>
     <message id="qtn_ener_remcha">
         <location filename="../src/notifications/batterynotifier.cpp" line="220"/>
@@ -38,7 +38,7 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="129"/>
         <source>Recharge battery</source>
-        <translation type="unfinished"></translation>
+        <translation>Reŝargi baterion</translation>
     </message>
     <message id="qtn_ener_ent_psnote">
         <location filename="../src/notifications/batterynotifier.cpp" line="232"/>
@@ -56,7 +56,7 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="240"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="101"/>
         <source>Low battery level</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterio preskaŭ malplena</translation>
     </message>
     <message id="qtn_ener_nopowcharge">
         <location filename="../src/notifications/batterynotifier.cpp" line="244"/>
@@ -84,13 +84,13 @@
         <location filename="../src/notifications/thermalnotifier.cpp" line="42"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="90"/>
         <source>The device is too cold</source>
-        <translation type="unfinished"></translation>
+        <translation>La aparato estas tro malvarma</translation>
     </message>
     <message id="qtn_shut_high_temp">
         <location filename="../src/shutdownscreen.cpp" line="79"/>
         <location filename="../tests/ut_shutdownscreen/ut_shutdownscreen.cpp" line="101"/>
         <source>Temperature too high. Device shutting down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Temperaturo tro alta. Aparato malstartos.</translation>
     </message>
     <message id="qtn_shut_unplug_usb">
         <location filename="../src/shutdownscreen.cpp" line="84"/>
@@ -102,12 +102,12 @@
         <location filename="../src/shutdownscreen.cpp" line="89"/>
         <location filename="../tests/ut_shutdownscreen/ut_shutdownscreen.cpp" line="115"/>
         <source>Battery empty. Device shutting down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Baterio malplenas. Aparato malstartos.</translation>
     </message>
     <message id="qtn_usb_device_locked">
         <location filename="../src/usbmodeselector.cpp" line="103"/>
         <source>Unlock device first</source>
-        <translation type="unfinished"></translation>
+        <translation>Malŝlosu la aparaton antaŭe</translation>
     </message>
     <message id="qtn_usb_disconnected">
         <location filename="../src/usbmodeselector.cpp" line="127"/>
@@ -125,19 +125,19 @@
         <location filename="../src/usbmodeselector.cpp" line="135"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="185"/>
         <source>MTP mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>En MTP-reĝimo</translation>
     </message>
     <message id="qtn_usb_storage_active">
         <location filename="../src/usbmodeselector.cpp" line="138"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="183"/>
         <source>Mass storage in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Amaskonservejo uzata</translation>
     </message>
     <message id="qtn_usb_sdk_active">
         <location filename="../src/usbmodeselector.cpp" line="141"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="184"/>
         <source>SDK mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>En SDK-reĝimo</translation>
     </message>
     <message id="qtn_usb_sync_active">
         <location filename="../src/usbmodeselector.cpp" line="144"/>
@@ -149,13 +149,13 @@
         <location filename="../src/usbmodeselector.cpp" line="147"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="186"/>
         <source>ADB mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>En ADB-reĝimo</translation>
     </message>
     <message id="qtn_usb_diag_active">
         <location filename="../src/usbmodeselector.cpp" line="150"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="187"/>
         <source>Diag mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>En diagnoza reĝimo</translation>
     </message>
     <message id="qtn_usb_host_mode_active">
         <location filename="../src/usbmodeselector.cpp" line="153"/>
