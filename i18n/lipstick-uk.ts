@@ -15,13 +15,13 @@
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="181"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="258"/>
         <source>Charging</source>
-        <translation>Заряджання</translation>
+        <translation>Зарядка</translation>
     </message>
     <message id="qtn_ener_charcomp">
         <location filename="../src/notifications/batterynotifier.cpp" line="216"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="114"/>
         <source>Charging complete</source>
-        <translation>Заряджання завершено</translation>
+        <translation>Зарядка завершена</translation>
     </message>
     <message id="qtn_ener_remcha">
         <location filename="../src/notifications/batterynotifier.cpp" line="220"/>
@@ -32,7 +32,7 @@
     <message id="qtn_ener_repcharger">
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
-        <translation>Не заряджається. Поправте зарядний пристрій.</translation>
+        <translation>Не заряджається. Відрегулюйте або утилізуйте зарядний пристрій.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
@@ -61,7 +61,7 @@
     <message id="qtn_ener_nopowcharge">
         <location filename="../src/notifications/batterynotifier.cpp" line="244"/>
         <source>Power input below charging threshold</source>
-        <translation>Напруга недостатньо висока для заряджування</translation>
+        <translation>Напруга недостатньо висока для зарядки</translation>
     </message>
     <message id="qtn_memu_memlow_notification_src">
         <location filename="../src/notifications/diskspacenotifier.cpp" line="56"/>
@@ -161,7 +161,7 @@
         <location filename="../src/usbmodeselector.cpp" line="153"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="188"/>
         <source>USB switched to host mode (OTG)</source>
-        <translation>USB перемкнено у режим хосту (OTG)</translation>
+        <translation>USB переключився у режим хосту (OTG)</translation>
     </message>
     <message id="qtn_usb_filessystem_inuse">
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="233"/>
