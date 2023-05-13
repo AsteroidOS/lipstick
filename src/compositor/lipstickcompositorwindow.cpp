@@ -292,6 +292,12 @@ void LipstickCompositorWindow::wheelEvent(QWheelEvent *event)
     QWaylandSurface *m_surface = surface();
     if (m_surface) {
         QWaylandSeat *inputDevice = m_surface->compositor()->seatFor(event);
+        QWaylandView *v = view();
+        // Hover mouse above window to allow wheel events to arrive.
+        if (v != inputDevice->mouseFocus()) {
+            QPointF pos(0, 0);
+            inputDevice->sendMouseMoveEvent(v, pos, pos);
+        }
         inputDevice->sendMouseWheelEvent(event->orientation(), event->delta());
     } else {
         event->ignore();
