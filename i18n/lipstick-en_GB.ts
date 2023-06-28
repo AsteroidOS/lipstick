@@ -136,8 +136,8 @@
     <message id="qtn_usb_sdk_active">
         <location filename="../src/usbmodeselector.cpp" line="141"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="184"/>
-        <source>SDK mode in use</source>
-        <translation>SDK mode in use</translation>
+        <source>SSH mode in use</source>
+        <translation>SSH mode in use</translation>
     </message>
     <message id="qtn_usb_sync_active">
         <location filename="../src/usbmodeselector.cpp" line="144"/>

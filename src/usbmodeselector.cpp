@@ -137,7 +137,7 @@ void USBModeSelector::showNotification(QString mode)
             //% "Mass storage in use"
             body = qtTrId("qtn_usb_storage_active");
         } else if (mode == QUsbModed::Mode::Developer) {
-            //% "SDK mode in use"
+            //% "SSH mode in use"
             body = qtTrId("qtn_usb_sdk_active");
         } else if (mode == QUsbModed::Mode::PCSuite) {
             //% "Sync-and-connect in use"
