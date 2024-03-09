@@ -33,13 +33,13 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
         <oldsource>Charging not started. Replace charger.</oldsource>
-        <translation>没有充电,调整或回收充电器.</translation>
+        <translation>未在充电中，请调整或更换充电器。</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="129"/>
         <source>Recharge battery</source>
-        <translation>重新为电池充电</translation>
+        <translation>对电池充电</translation>
     </message>
     <message id="qtn_ener_ent_psnote">
         <location filename="../src/notifications/batterynotifier.cpp" line="232"/>
@@ -127,7 +127,7 @@
         <location filename="../src/usbmodeselector.cpp" line="132"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="189"/>
         <source>USB tethering in use</source>
-        <translation>USB连接正在使用中</translation>
+        <translation>USB网络共享正在使用中</translation>
     </message>
     <message id="qtn_usb_mtp_active">
         <location filename="../src/usbmodeselector.cpp" line="135"/>
