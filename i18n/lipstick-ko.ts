@@ -96,13 +96,13 @@
         <location filename="../src/shutdownscreen.cpp" line="84"/>
         <location filename="../tests/ut_shutdownscreen/ut_shutdownscreen.cpp" line="108"/>
         <source>USB cable plugged in. Unplug it to shut down device.</source>
-        <translation>USB 케이블이 연결되었습니다. 장치를 끄려면 케이블을 장치에서 분리하세요.</translation>
+        <translation>USB 케이블이 연결되었습니다. 플러그를 뽑아 장치를 차단합니다.</translation>
     </message>
     <message id="qtn_shut_batt_empty">
         <location filename="../src/shutdownscreen.cpp" line="89"/>
         <location filename="../tests/ut_shutdownscreen/ut_shutdownscreen.cpp" line="115"/>
         <source>Battery empty. Device shutting down.</source>
-        <translation>배터리가 없습니다. 장치를 끕니다.</translation>
+        <translation>배터리가 부족합니다. 장치를 끕니다.</translation>
     </message>
     <message id="qtn_usb_device_locked">
         <location filename="../src/usbmodeselector.cpp" line="103"/>
