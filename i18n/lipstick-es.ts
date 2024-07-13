@@ -33,7 +33,7 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
         <oldsource>Charging not started. Replace charger.</oldsource>
-        <translation>No se está cargando. Arregle o recambie el cargador.</translation>
+        <translation>No se está cargando. Arregle o cambie el cargador.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
@@ -64,7 +64,7 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="244"/>
         <source>Power input below charging threshold</source>
         <oldsource>Not enough power to charge</oldsource>
-        <translation>Entrada de potencia por debajo del límite de carga</translation>
+        <translation>Potencia por debajo del límite de carga</translation>
     </message>
     <message id="qtn_memu_memlow_notification_src">
         <location filename="../src/notifications/diskspacenotifier.cpp" line="56"/>
@@ -84,7 +84,7 @@
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="84"/>
         <source>Device overheating. Turn it off.</source>
         <oldsource>Device is overheating. Turn it off.</oldsource>
-        <translation>El dispositivo está sobrecalentádose. Apáguelo.</translation>
+        <translation>El dispositivo está sobrecalentándose. Apáguelo.</translation>
     </message>
     <message id="qtn_shut_low_temp_warning">
         <location filename="../src/notifications/thermalnotifier.cpp" line="42"/>
