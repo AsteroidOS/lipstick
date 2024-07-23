@@ -27,18 +27,18 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="220"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="172"/>
         <source>Disconnect charger from power supply to save energy</source>
-        <translation>Enerjiyə qənaət etmək üçün adapteri enerji təchizatından ayırın</translation>
+        <translation>Enerjiyə qənaət üçün adapteri enerji təchizatından ayır</translation>
     </message>
     <message id="qtn_ener_repcharger">
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
-        <translation>Doldurulmur. Şarj cihazını tənzimləyin və ya təkrar cəhd edin.</translation>
+        <translation>Doldurulmur. Şarj cihazını tənzimlə və ya təkrar cəhd et.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="129"/>
         <source>Recharge battery</source>
-        <translation>Batareyanı yenidən doldurun</translation>
+        <translation>Batareyanı yenidən doldur</translation>
     </message>
     <message id="qtn_ener_ent_psnote">
         <location filename="../src/notifications/batterynotifier.cpp" line="232"/>
@@ -72,7 +72,7 @@
         <location filename="../src/notifications/thermalnotifier.cpp" line="34"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="78"/>
         <source>Device getting hot. Close all apps.</source>
-        <translation>Cihaz qızır. Bütün proqramları bağlayın.</translation>
+        <translation>Cihaz qızır. Bütün tətbiqləri bağla.</translation>
     </message>
     <message id="qtn_shut_high_temp_alert">
         <location filename="../src/notifications/thermalnotifier.cpp" line="38"/>
