@@ -32,7 +32,7 @@
     <message id="qtn_ener_repcharger">
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
-        <translation>चार्ज नही हो रहा हैं। चार्जर को एडजस्ट या रीसायकल करें।</translation>
+        <translation>चार्ज नहीं हो रहा हैं। चार्जर को एडजस्ट या रीसायकल करें।</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
@@ -66,19 +66,19 @@
     <message id="qtn_memu_memlow_notification_src">
         <location filename="../src/notifications/diskspacenotifier.cpp" line="56"/>
         <source>Storage space running out.</source>
-        <translation type="unfinished"></translation>
+        <translation>भंडारण स्थान कम हो रहा है।</translation>
     </message>
     <message id="qtn_shut_high_temp_warning">
         <location filename="../src/notifications/thermalnotifier.cpp" line="34"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="78"/>
         <source>Device getting hot. Close all apps.</source>
-        <translation type="unfinished"></translation>
+        <translation>डिवाइस गर्म हो रहा है। सभी ऐप्स बंद करें।</translation>
     </message>
     <message id="qtn_shut_high_temp_alert">
         <location filename="../src/notifications/thermalnotifier.cpp" line="38"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="84"/>
         <source>Device overheating. Turn it off.</source>
-        <translation type="unfinished"></translation>
+        <translation>डिवाइस ज़्यादा गरम हो रहा है। इसे बंद करें ।</translation>
     </message>
     <message id="qtn_shut_low_temp_warning">
         <location filename="../src/notifications/thermalnotifier.cpp" line="42"/>
