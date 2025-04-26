@@ -44,13 +44,13 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="232"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="205"/>
         <source>Entering power save mode</source>
-        <translation>ऊर्जा बचत मोड में प्रवेश कर रहा</translation>
+        <translation>पावर सेवर मोड में</translation>
     </message>
     <message id="qtn_ener_exit_psnote">
         <location filename="../src/notifications/batterynotifier.cpp" line="236"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="213"/>
         <source>Exiting power save mode</source>
-        <translation>पावर सेव मोड से बाहर निकल रहा है</translation>
+        <translation>पावर सेवर मोड से बाहर</translation>
     </message>
     <message id="qtn_ener_lowbatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="240"/>
@@ -61,12 +61,12 @@
     <message id="qtn_ener_nopowcharge">
         <location filename="../src/notifications/batterynotifier.cpp" line="244"/>
         <source>Power input below charging threshold</source>
-        <translation>चार्जिंग थ्रेसहोल्ड के नीचे पावर इनपुट</translation>
+        <translation>कम वोल्टेज/चार्जिंग सीमा से नीचे पावर इनपुट</translation>
     </message>
     <message id="qtn_memu_memlow_notification_src">
         <location filename="../src/notifications/diskspacenotifier.cpp" line="56"/>
         <source>Storage space running out.</source>
-        <translation>भंडारण स्थान कम हो रहा है।</translation>
+        <translation>स्टोरेज स्थान कम हो रहा है।</translation>
     </message>
     <message id="qtn_shut_high_temp_warning">
         <location filename="../src/notifications/thermalnotifier.cpp" line="34"/>
@@ -78,7 +78,7 @@
         <location filename="../src/notifications/thermalnotifier.cpp" line="38"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="84"/>
         <source>Device overheating. Turn it off.</source>
-        <translation>डिवाइस ज़्यादा गरम हो रहा है। इसे बंद करें ।</translation>
+        <translation>डिवाइस ज़्यादा गरम हो रहा है। डिवाइस बंद करें ।</translation>
     </message>
     <message id="qtn_shut_low_temp_warning">
         <location filename="../src/notifications/thermalnotifier.cpp" line="42"/>
@@ -119,7 +119,7 @@
         <location filename="../src/usbmodeselector.cpp" line="132"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="189"/>
         <source>USB tethering in use</source>
-        <translation>USB टेथरिंग उपयोग में है</translation>
+        <translation>USB थेदरिंग उपयोग में है</translation>
     </message>
     <message id="qtn_usb_mtp_active">
         <location filename="../src/usbmodeselector.cpp" line="135"/>
