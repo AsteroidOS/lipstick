@@ -17,7 +17,7 @@
 
 #include <QGuiApplication>
 #include <QScreen>
-#include <MGConfItem>
+#include <MDConfItem>
 #include "screenlock/screenlock.h"
 #include "homeapplication.h"
 #include "lipsticksettings.h"
@@ -81,12 +81,12 @@ QSize LipstickSettings::screenSize()
 void LipstickSettings::exportScreenSize()
 {
     const int defaultValue = 0;
-    MGConfItem widthConf("/lipstick/screen/primary/width");
+    MDConfItem widthConf("/lipstick/screen/primary/width");
     if (widthConf.value(defaultValue) != QGuiApplication::primaryScreen()->size().width()) {
         widthConf.set(QGuiApplication::primaryScreen()->size().width());
         widthConf.sync();
     }
-    MGConfItem heightConf("/lipstick/screen/primary/height");
+    MDConfItem heightConf("/lipstick/screen/primary/height");
     if (heightConf.value(defaultValue) != QGuiApplication::primaryScreen()->size().height()) {
         heightConf.set(QGuiApplication::primaryScreen()->size().height());
         heightConf.sync();

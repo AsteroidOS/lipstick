@@ -22,7 +22,7 @@
 #include <QDBusPendingCallWatcher>
 #include <keepalive/backgroundactivity.h>
 
-class MGConfItem;
+class MDConfItem;
 class QTimer;
 
 class DeviceLock : public QObject, protected QDBusContext
