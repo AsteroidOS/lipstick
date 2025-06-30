@@ -6,7 +6,7 @@
     <message id="qtn_ap_lipstick">
         <location filename="../src/homeapplication.cpp" line="78"/>
         <source>System</source>
-        <translation type="unfinished"></translation>
+        <translation>سیستوم</translation>
     </message>
     <message id="qtn_ener_charging">
         <location filename="../src/notifications/batterynotifier.cpp" line="212"/>
@@ -15,24 +15,24 @@
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="181"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="258"/>
         <source>Charging</source>
-        <translation type="unfinished"></translation>
+        <translation>هونی شارژ ابۊ</translation>
     </message>
     <message id="qtn_ener_charcomp">
         <location filename="../src/notifications/batterynotifier.cpp" line="216"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="114"/>
         <source>Charging complete</source>
-        <translation type="unfinished"></translation>
+        <translation>شارژ پور وابی</translation>
     </message>
     <message id="qtn_ener_remcha">
         <location filename="../src/notifications/batterynotifier.cpp" line="220"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="172"/>
         <source>Disconnect charger from power supply to save energy</source>
-        <translation type="unfinished"></translation>
+        <translation>سی زفت کردن انرژی شارژر ن جوڌا کۊنین</translation>
     </message>
     <message id="qtn_ener_repcharger">
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
-        <translation type="unfinished"></translation>
+        <translation>شارژ نؽبۊ. شارژر ن سامووݩ کۊنین یا دووارته بزنینس.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
