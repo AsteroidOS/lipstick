@@ -1,16 +1,16 @@
 #ifndef MGCONFITEM_STUB
 #define MGCONFITEM_STUB
 
-#include "mgconfitem.h"
+#include "mdconfitem.h"
 #include <stubbase.h>
 
 
 // 1. DECLARE STUB
 // FIXME - stubgen is not yet finished
-class MGConfItemStub : public StubBase {
+class MDConfItemStub : public StubBase {
   public:
-  virtual void MGConfItemConstructor(const QString &key, QObject *parent);
-  virtual void MGConfItemDestructor();
+  virtual void MDConfItemConstructor(const QString &key, QObject *parent);
+  virtual void MDConfItemDestructor();
   virtual QString key() const;
   virtual QVariant value() const;
   virtual QVariant value(const QVariant &def) const;
@@ -19,75 +19,75 @@ class MGConfItemStub : public StubBase {
 }; 
 
 // 2. IMPLEMENT STUB
-void MGConfItemStub::MGConfItemConstructor(const QString &key, QObject *parent) {
+void MDConfItemStub::MDConfItemConstructor(const QString &key, QObject *parent) {
   Q_UNUSED(key);
   Q_UNUSED(parent);
 
 }
-void MGConfItemStub::MGConfItemDestructor() {
+void MDConfItemStub::MDConfItemDestructor() {
 
 }
-QString MGConfItemStub::key() const {
+QString MDConfItemStub::key() const {
   stubMethodEntered("key");
   return stubReturnValue<QString>("key");
 }
 
-QVariant MGConfItemStub::value() const {
+QVariant MDConfItemStub::value() const {
   stubMethodEntered("value");
   return stubReturnValue<QVariant>("value");
 }
 
-QVariant MGConfItemStub::value(const QVariant &def) const {
+QVariant MDConfItemStub::value(const QVariant &def) const {
   QList<ParameterBase*> params;
   params.append( new Parameter<const QVariant & >(def));
   stubMethodEntered("value",params);
   return stubReturnValue<QVariant>("value");
 }
 
-void MGConfItemStub::set(const QVariant &val) {
+void MDConfItemStub::set(const QVariant &val) {
   QList<ParameterBase*> params;
   params.append( new Parameter<const QVariant & >(val));
   stubMethodEntered("set",params);
 }
 
-void MGConfItemStub::unset() {
+void MDConfItemStub::unset() {
   stubMethodEntered("unset");
 }
 
 
 
 // 3. CREATE A STUB INSTANCE
-MGConfItemStub gDefaultMGConfItemStub;
-MGConfItemStub* gMGConfItemStub = &gDefaultMGConfItemStub;
+MDConfItemStub gDefaultMDConfItemStub;
+MDConfItemStub* gMDConfItemStub = &gDefaultMDConfItemStub;
 
 
 // 4. CREATE A PROXY WHICH CALLS THE STUB
-MGConfItem::MGConfItem(const QString &key, QObject *parent) {
-  gMGConfItemStub->MGConfItemConstructor(key, parent);
+MDConfItem::MDConfItem(const QString &key, QObject *parent) {
+  gMDConfItemStub->MDConfItemConstructor(key, parent);
 }
 
-MGConfItem::~MGConfItem() {
-  gMGConfItemStub->MGConfItemDestructor();
+MDConfItem::~MDConfItem() {
+  gMDConfItemStub->MDConfItemDestructor();
 }
 
-QString MGConfItem::key() const {
-  return gMGConfItemStub->key();
+QString MDConfItem::key() const {
+  return gMDConfItemStub->key();
 }
 
-QVariant MGConfItem::value() const {
-  return gMGConfItemStub->value();
+QVariant MDConfItem::value() const {
+  return gMDConfItemStub->value();
 }
 
-QVariant MGConfItem::value(const QVariant &def) const {
-  return gMGConfItemStub->value(def);
+QVariant MDConfItem::value(const QVariant &def) const {
+  return gMDConfItemStub->value(def);
 }
 
-void MGConfItem::set(const QVariant &val) {
-  gMGConfItemStub->set(val);
+void MDConfItem::set(const QVariant &val) {
+  gMDConfItemStub->set(val);
 }
 
-void MGConfItem::unset() {
-  gMGConfItemStub->unset();
+void MDConfItem::unset() {
+  gMDConfItemStub->unset();
 }
 
 

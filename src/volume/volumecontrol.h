@@ -23,7 +23,7 @@
 class HomeWindow;
 class PulseAudioControl;
 class VolumeKeyListener;
-class MGConfItem;
+class MDConfItem;
 
 namespace ResourcePolicy {
     class ResourceSet;
@@ -218,7 +218,7 @@ private:
     int maximumVolume_;
 
     //! Stores audio warning acknowledgement state
-    MGConfItem *audioWarning;
+    MDConfItem *audioWarning;
 
     //! The current safe volume
     int safeVolume_;
