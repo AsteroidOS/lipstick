@@ -27,13 +27,13 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="220"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="172"/>
         <source>Disconnect charger from power supply to save energy</source>
-        <translation>Enerji tasarrufu için şarj aygıtını güçten çıkarın</translation>
+        <translation>Enerji tasarrufu için şarj aletini güçten çıkarın</translation>
     </message>
     <message id="qtn_ener_repcharger">
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
         <oldsource>Charging not started. Replace charger.</oldsource>
-        <translation>Şarj olmuyor. Şarj aygıtını düzeltin veya geri kazanın.</translation>
+        <translation>Şarj olmuyor. Şarj aletini düzeltin veya geri dönüştürün.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
@@ -58,13 +58,13 @@
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="101"/>
         <source>Low battery level</source>
         <oldsource>Low battery</oldsource>
-        <translation>Düşük pil düzeyi</translation>
+        <translation>Düşük pil seviyesi</translation>
     </message>
     <message id="qtn_ener_nopowcharge">
         <location filename="../src/notifications/batterynotifier.cpp" line="244"/>
         <source>Power input below charging threshold</source>
         <oldsource>Not enough power to charge</oldsource>
-        <translation>Giren güç şarj eşiğinin altında</translation>
+        <translation>Giriş gücü şarj eşiğinin altında</translation>
     </message>
     <message id="qtn_memu_memlow_notification_src">
         <location filename="../src/notifications/diskspacenotifier.cpp" line="56"/>
@@ -115,7 +115,7 @@
     <message id="qtn_usb_device_locked">
         <location filename="../src/usbmodeselector.cpp" line="103"/>
         <source>Unlock device first</source>
-        <translation>Önce aygıtın kilidini kaldırın</translation>
+        <translation>Önce aygıtın kilidini açın</translation>
     </message>
     <message id="qtn_usb_disconnected">
         <location filename="../src/usbmodeselector.cpp" line="127"/>
@@ -127,7 +127,7 @@
         <location filename="../src/usbmodeselector.cpp" line="132"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="189"/>
         <source>USB tethering in use</source>
-        <translation>USB bağlantısı kullanımda</translation>
+        <translation>USB bağlantı paylaşımı kullanımda</translation>
     </message>
     <message id="qtn_usb_mtp_active">
         <location filename="../src/usbmodeselector.cpp" line="135"/>
@@ -170,7 +170,7 @@
         <location filename="../src/usbmodeselector.cpp" line="153"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="188"/>
         <source>USB switched to host mode (OTG)</source>
-        <translation>USB, konak kipine geçti (OTG)</translation>
+        <translation>USB, host kipine geçti (OTG)</translation>
     </message>
     <message id="qtn_usb_filessystem_inuse">
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="233"/>
