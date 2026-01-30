@@ -12,7 +12,7 @@ HEADERS += \
     $$VOLUMESRCDIR/pulseaudiocontrol.h \
     $$UTILITYSRCDIR/closeeventeater.h \
     $$SRCDIR/homewindow.h \
-    /usr/include/mlite5/mgconfitem.h \
+    /usr/include/mlite5/mdconfitem.h \
 
 SOURCES += \
     ut_volumecontrol.cpp \

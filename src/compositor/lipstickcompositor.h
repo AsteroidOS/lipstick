@@ -26,7 +26,7 @@
 #include <QWaylandClient>
 #include <QPointer>
 #include <QTimer>
-#include <MGConfItem>
+#include <MDConfItem>
 #include <qmdisplaystate.h>
 
 #include <timed-qt5/interface>
@@ -111,7 +111,7 @@ public:
     Q_INVOKABLE void clearKeyboardFocus();
     Q_INVOKABLE void setDisplayOff();
     Q_INVOKABLE QVariant settingsValue(const QString &key, const QVariant &defaultValue = QVariant()) const
-        { return (key == "orientationLock") ? m_orientationLock->value(defaultValue) : MGConfItem("/lipstick/" + key).value(defaultValue); }
+        { return (key == "orientationLock") ? m_orientationLock->value(defaultValue) : MDConfItem("/lipstick/" + key).value(defaultValue); }
 
     LipstickCompositorProcWindow *mapProcWindow(const QString &title, const QString &category, const QRect &);
     LipstickCompositorProcWindow *mapProcWindow(const QString &title, const QString &category, const QRect &, QQuickItem *rootItem);
@@ -236,7 +236,7 @@ private:
     MeeGo::QmDisplayState *m_displayState;
     QOrientationSensor* m_orientationSensor;
     QPointer<QMimeData> m_retainedSelection;
-    MGConfItem *m_orientationLock;
+    MDConfItem *m_orientationLock;
     MeeGo::QmDisplayState::DisplayState m_currentDisplayState;
     bool m_updatesEnabled;
     bool m_completed;
