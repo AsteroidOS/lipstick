@@ -33,7 +33,7 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
         <oldsource>Charging not started. Replace charger.</oldsource>
-        <translation>Nabíjení nezačalo. Seřiďte nebo zrecyklujte nabíječku.</translation>
+        <translation>Nabíjení nezačalo. Zkuste zahýbat s konektory nebo nabíječku vyndejte ze zásuvky a pak ji tam zase vraťte.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
