@@ -32,7 +32,7 @@
     <message id="qtn_ener_repcharger">
         <location filename="../src/notifications/batterynotifier.cpp" line="224"/>
         <source>Not charging. Adjust or recycle charger.</source>
-        <translation type="unfinished"></translation>
+        <translation>Es pas a cargar. Ajustatz o cambiatz de cargador.</translation>
     </message>
     <message id="qtn_ener_rebatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="228"/>
@@ -50,118 +50,118 @@
         <location filename="../src/notifications/batterynotifier.cpp" line="236"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="213"/>
         <source>Exiting power save mode</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortida del mòde d&apos;estalvi d&apos;energia</translation>
     </message>
     <message id="qtn_ener_lowbatt">
         <location filename="../src/notifications/batterynotifier.cpp" line="240"/>
         <location filename="../tests/ut_batterynotifier/ut_batterynotifier.cpp" line="101"/>
         <source>Low battery level</source>
-        <translation type="unfinished"></translation>
+        <translation>Nivèl de batariá bas</translation>
     </message>
     <message id="qtn_ener_nopowcharge">
         <location filename="../src/notifications/batterynotifier.cpp" line="244"/>
         <source>Power input below charging threshold</source>
-        <translation type="unfinished"></translation>
+        <translation>Font d&apos;energia jos sulhet de carga</translation>
     </message>
     <message id="qtn_memu_memlow_notification_src">
         <location filename="../src/notifications/diskspacenotifier.cpp" line="56"/>
         <source>Storage space running out.</source>
-        <translation type="unfinished"></translation>
+        <translation>Espaci liure gaireben plen.</translation>
     </message>
     <message id="qtn_shut_high_temp_warning">
         <location filename="../src/notifications/thermalnotifier.cpp" line="34"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="78"/>
         <source>Device getting hot. Close all apps.</source>
-        <translation type="unfinished"></translation>
+        <translation>L’aparelh ven caud. Tampatz totas las aplicacions.</translation>
     </message>
     <message id="qtn_shut_high_temp_alert">
         <location filename="../src/notifications/thermalnotifier.cpp" line="38"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="84"/>
         <source>Device overheating. Turn it off.</source>
-        <translation type="unfinished"></translation>
+        <translation>L’aparelh subrecalfa. Atudatz-lo.</translation>
     </message>
     <message id="qtn_shut_low_temp_warning">
         <location filename="../src/notifications/thermalnotifier.cpp" line="42"/>
         <location filename="../tests/ut_thermalnotifier/ut_thermalnotifier.cpp" line="90"/>
         <source>The device is too cold</source>
-        <translation type="unfinished"></translation>
+        <translation>L’aparelh es tròp fred</translation>
     </message>
     <message id="qtn_shut_high_temp">
         <location filename="../src/shutdownscreen.cpp" line="79"/>
         <location filename="../tests/ut_shutdownscreen/ut_shutdownscreen.cpp" line="101"/>
         <source>Temperature too high. Device shutting down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Temperatura tròp nauta. Extincion de l’aparelh.</translation>
     </message>
     <message id="qtn_shut_unplug_usb">
         <location filename="../src/shutdownscreen.cpp" line="84"/>
         <location filename="../tests/ut_shutdownscreen/ut_shutdownscreen.cpp" line="108"/>
         <source>USB cable plugged in. Unplug it to shut down device.</source>
-        <translation type="unfinished"></translation>
+        <translation>Cable USB brancat. Desbrancatz-lo per atudar l&apos;aparelh.</translation>
     </message>
     <message id="qtn_shut_batt_empty">
         <location filename="../src/shutdownscreen.cpp" line="89"/>
         <location filename="../tests/ut_shutdownscreen/ut_shutdownscreen.cpp" line="115"/>
         <source>Battery empty. Device shutting down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Batariá voida. Extincion de l’aparelh.</translation>
     </message>
     <message id="qtn_usb_device_locked">
         <location filename="../src/usbmodeselector.cpp" line="103"/>
         <source>Unlock device first</source>
-        <translation type="unfinished"></translation>
+        <translation>Desverrolhatz l&apos;aparelh d&apos;en primièr</translation>
     </message>
     <message id="qtn_usb_disconnected">
         <location filename="../src/usbmodeselector.cpp" line="127"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="180"/>
         <source>USB cable disconnected</source>
-        <translation type="unfinished"></translation>
+        <translation>Cable USB desconnectat</translation>
     </message>
     <message id="qtn_usb_connection_sharing_active">
         <location filename="../src/usbmodeselector.cpp" line="132"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="189"/>
         <source>USB tethering in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Paratge de connexion USB en cors</translation>
     </message>
     <message id="qtn_usb_mtp_active">
         <location filename="../src/usbmodeselector.cpp" line="135"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="185"/>
         <source>MTP mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Mòde MTO activat</translation>
     </message>
     <message id="qtn_usb_storage_active">
         <location filename="../src/usbmodeselector.cpp" line="138"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="183"/>
         <source>Mass storage in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Emmagazinatge de massa activat</translation>
     </message>
     <message id="qtn_usb_sdk_active">
         <location filename="../src/usbmodeselector.cpp" line="141"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="184"/>
         <source>SSH mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Mòde SSH activat</translation>
     </message>
     <message id="qtn_usb_sync_active">
         <location filename="../src/usbmodeselector.cpp" line="144"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="181"/>
         <source>Sync-and-connect in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Sincronizacion e connexion activadas</translation>
     </message>
     <message id="qtn_usb_adb_active">
         <location filename="../src/usbmodeselector.cpp" line="147"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="186"/>
         <source>ADB mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Mòde ADB activat</translation>
     </message>
     <message id="qtn_usb_diag_active">
         <location filename="../src/usbmodeselector.cpp" line="150"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="187"/>
         <source>Diag mode in use</source>
-        <translation type="unfinished"></translation>
+        <translation>Mòde Diag activitat</translation>
     </message>
     <message id="qtn_usb_host_mode_active">
         <location filename="../src/usbmodeselector.cpp" line="153"/>
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="188"/>
         <source>USB switched to host mode (OTG)</source>
-        <translation type="unfinished"></translation>
+        <translation>USB passat en mòde òste (OTG)</translation>
     </message>
     <message id="qtn_usb_filessystem_inuse">
         <location filename="../tests/ut_usbmodeselector/ut_usbmodeselector.cpp" line="233"/>
