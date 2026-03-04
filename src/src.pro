@@ -157,7 +157,6 @@ packagesExist(contentaction5) {
 QT += dbus xml qml quick sql gui gui-private sensors
 
 QMAKE_CXXFLAGS += \
-    -Werror \
     -Wno-error=format-security \
     -Wno-deprecated-copy \ 
     -g \

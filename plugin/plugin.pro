@@ -25,7 +25,6 @@ OTHER_FILES += \
     qmldir
 
 QMAKE_CXXFLAGS += \
-    -Werror \
     -g \
     -std=c++0x \
     -fPIC \
