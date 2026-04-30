@@ -5,7 +5,7 @@ system(qdbusxml2cpp screenshotservice.xml -a screenshotserviceadaptor -c Screens
 system(qdbusxml2cpp shutdownscreen.xml -a shutdownscreenadaptor -c ShutdownScreenAdaptor -l ShutdownScreen -i shutdownscreen.h)
 
 TEMPLATE = lib
-TARGET = lipstick-qt5
+TARGET = lipstick-qt6
 
 # Override the version from the spec file, we need .so version 1.0
 VERSION = 1.0
@@ -60,7 +60,7 @@ PUBLICHEADERS += \
 
 INSTALLS += publicheaderfiles dbus_policy
 publicheaderfiles.files = $$PUBLICHEADERS
-publicheaderfiles.path = /usr/include/lipstick-qt5
+publicheaderfiles.path = /usr/include/lipstick-qt6
 dbus_policy.files += lipstick.conf
 dbus_policy.path = /etc/dbus-1/system.d
 
