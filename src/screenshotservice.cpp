@@ -12,7 +12,6 @@
 ** of this file.
 **
 ****************************************************************************/
-#include "hwcrenderstage.h"
 #include "lipstickcompositor.h"
 #include "screenshotservice.h"
 
@@ -32,11 +31,6 @@ ScreenshotService::ScreenshotService(QObject *parent) :
 void ScreenshotService::saveScreenshot(const QString &path)
 {
     if (LipstickCompositor *compositor = LipstickCompositor::instance()) {
-        QQuickWindowPrivate *wd = QQuickWindowPrivate::get(compositor->quickWindow());
-        HwcRenderStage *renderStage = (HwcRenderStage *) wd->customRenderStage;
-        if (renderStage)
-            renderStage->setBypassHwc(true);
-
         QImage grab(compositor->quickWindow()->grabWindow());
 
         int rotation(QGuiApplication::primaryScreen()->angleBetween(Qt::PrimaryOrientation, compositor->topmostWindowOrientation()));
@@ -47,8 +41,5 @@ void ScreenshotService::saveScreenshot(const QString &path)
         }
 
         grab.save(path.isEmpty() ? (QStandardPaths::writableLocation(QStandardPaths::PicturesLocation) + "/" + QDateTime::currentDateTime().toString("yyyyMMddhhmmss") + ".png") : path, 0, 100);
-
-        if (renderStage)
-            renderStage->setBypassHwc(false);
     }
 }

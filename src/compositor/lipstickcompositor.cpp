@@ -31,7 +31,6 @@
 #include "lipstickcompositoradaptor.h"
 #include "lipsticksettings.h"
 #include <qpa/qwindowsysteminterface.h>
-#include "hwcrenderstage.h"
 #include <private/qguiapplication_p.h>
 #include <QtGui/qpa/qplatformintegration.h>
 #include <QWaylandQuickShellSurfaceItem>
@@ -112,8 +111,6 @@ LipstickCompositor::LipstickCompositor()
     QDesktopServices::setUrlHandler("mailto", this, "openUrl");
 
     connect(QGuiApplication::clipboard(), SIGNAL(dataChanged()), SLOT(clipboardDataChanged()));
-
-    HwcRenderStage::initialize(this);
 
     m_timedDbus = new Maemo::Timed::Interface();
     if( !m_timedDbus->isValid() )

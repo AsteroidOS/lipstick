@@ -11,9 +11,7 @@ PUBLICHEADERS += \
 
 HEADERS += \
     $$PWD/windowpixmapitem.h \
-    $$PWD/lipstickrecorder.h \
-    $$PWD/hwcrenderstage.h \
-    $$PWD/hwcimage.h \
+    $$PWD/lipstickrecorder.h
 
 SOURCES += \
     $$PWD/lipstickcompositor.cpp \
@@ -21,9 +19,7 @@ SOURCES += \
     $$PWD/lipstickcompositorprocwindow.cpp \
     $$PWD/lipstickcompositoradaptor.cpp \
     $$PWD/windowmodel.cpp \
-    $$PWD/windowpixmapitem.cpp \
-    $$PWD/hwcrenderstage.cpp \
-    $$PWD/hwcimage.cpp \
+    $$PWD/windowpixmapitem.cpp
 
 DEFINES += QT_COMPOSITOR_QUICK
 
