@@ -62,7 +62,7 @@ void NotificationFeedbackPlayer::addNotification(uint id)
         if (!notification->hints().value(NotificationManager::HINT_FEEDBACK_SUPPRESSED).toBool()) {
             // Play the feedback related to the notification if any
             const QString feedback = notification->hints().value(NotificationManager::HINT_FEEDBACK).toString();
-            const QStringList feedbackItems = feedback.split(QStringLiteral(","), QString::SkipEmptyParts);
+            const QStringList feedbackItems = feedback.split(QStringLiteral(","), Qt::SkipEmptyParts);
             if (!feedbackItems.isEmpty()) {
                 QMap<QString, QVariant> properties;
                 if (notification->hints().value(NotificationManager::HINT_LED_DISABLED_WITHOUT_BODY_AND_SUMMARY, true).toBool() &&

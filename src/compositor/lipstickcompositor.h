@@ -17,6 +17,7 @@
 #define LIPSTICKCOMPOSITOR_H
 
 #include <QQuickWindow>
+#include <QWaylandSurface>
 #include "lipstickglobal.h"
 #include <QWaylandQuickCompositor>
 #include <QWaylandQuickOutput>
@@ -29,9 +30,9 @@
 #include <MDConfItem>
 #include <qmdisplaystate.h>
 
-#include <timed-qt5/interface>
-#include <timed-qt5/exception>
-#include <timed-qt5/event-declarations.h>
+#include <timed-qt6/interface>
+#include <timed-qt6/exception>
+#include <timed-qt6/event-declarations.h>
 
 class WindowModel;
 class LipstickCompositorWindow;

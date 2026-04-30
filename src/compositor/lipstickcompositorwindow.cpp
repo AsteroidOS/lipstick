@@ -261,7 +261,8 @@ void LipstickCompositorWindow::wheelEvent(QWheelEvent *event)
             QPointF pos(0, 0);
             inputDevice->sendMouseMoveEvent(v, pos, pos);
         }
-        inputDevice->sendMouseWheelEvent(event->orientation(), event->delta());
+        QPoint angle = event->angleDelta();
+        inputDevice->sendMouseWheelEvent(Qt::Vertical, angle.y());
     } else {
         event->ignore();
     }

@@ -232,12 +232,12 @@ void LauncherItem::launchApplication()
 
     // Take care of the freedesktop standards things
 
-    commandText.replace(QRegExp("%k"), filePath());
-    commandText.replace(QRegExp("%c"), _desktopEntry->name());
-    commandText.remove(QRegExp("%[fFuU]"));
+    commandText.replace(QRegularExpression("%k"), filePath());
+    commandText.replace(QRegularExpression("%c"), _desktopEntry->name());
+    commandText.remove(QRegularExpression("%[fFuU]"));
 
     if (!_desktopEntry->icon().isEmpty())
-        commandText.replace(QRegExp("%i"), QString("--icon ") + _desktopEntry->icon());
+        commandText.replace(QRegularExpression("%i"), QString("--icon ") + _desktopEntry->icon());
 
     // DETAILS: http://standards.freedesktop.org/desktop-entry-spec/latest/index.html
     // DETAILS: http://standards.freedesktop.org/desktop-entry-spec/latest/ar01s06.html

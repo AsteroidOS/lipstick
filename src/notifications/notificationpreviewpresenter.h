@@ -17,10 +17,10 @@
 #define NOTIFICATIONPREVIEWPRESENTER_H
 
 #include "lipstickglobal.h"
+#include "lipsticknotification.h"
 #include <QObject>
 
 class HomeWindow;
-class LipstickNotification;
 class NotificationFeedbackPlayer;
 
 namespace MeeGo {

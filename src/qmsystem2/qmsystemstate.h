@@ -38,8 +38,6 @@
 #include "system_global.h"
 #include <QtCore/qobject.h>
 
-QT_BEGIN_HEADER
-
 namespace MeeGo {
 
 class QmSystemStatePrivate;
@@ -93,8 +91,6 @@ private:
 };
 
 } // MeeGo namespace
-
-QT_END_HEADER
 
 #endif // QMSYSTEMSTATE_H
 

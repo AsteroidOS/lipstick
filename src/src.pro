@@ -13,7 +13,7 @@ VERSION = 1.0
 DEFINES += LIPSTICK_BUILD_LIBRARY
 DEFINES += VERSION=\\\"$${VERSION}\\\"
 
-PKGCONFIG += timed-qt5
+PKGCONFIG += timed-qt6
 
 CONFIG += qt wayland-scanner
 INSTALLS = target ts_install engineering_english_install
@@ -141,7 +141,7 @@ SOURCES += \
 
 CONFIG += link_pkgconfig mobility qt warn_on depend_includepath qmake_cache target_qt
 CONFIG -= link_prl
-PKGCONFIG += mlite5 mce mce-qt5 keepalive dbus-1 dbus-glib-1 libresourceqt5 ngf-qt5 Qt5SystemInfo libsystemd dsme_dbus_if thermalmanager_dbus_if usb-moded-qt5 egl
+PKGCONFIG += mlite6 mce mce-qt6 keepalive dbus-1 dbus-glib-1 libresourceqt6 ngf-qt6 libsystemd dsme_dbus_if thermalmanager_dbus_if usb-moded-qt6 egl
 
 LIBS += -lrt
 
@@ -159,7 +159,6 @@ QMAKE_CXXFLAGS += \
     -Wno-error=format-security \
     -Wno-deprecated-copy \ 
     -g \
-    -std=c++0x \
     -fPIC \
     -fvisibility=hidden \
     -fvisibility-inlines-hidden

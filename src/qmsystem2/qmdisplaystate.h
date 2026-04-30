@@ -35,8 +35,6 @@
 #include "system_global.h"
 #include <QtCore/qobject.h>
 
-QT_BEGIN_HEADER
-
 namespace MeeGo {
 
 class QmDisplayStatePrivate;
@@ -101,8 +99,6 @@ private:
 };
 
 } //MeeGo namespace
-
-QT_END_HEADER
 
 #endif /* QMDISPLAYSTATE_H */
 

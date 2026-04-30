@@ -35,8 +35,6 @@
 #include "system_global.h"
 #include <QtCore/qobject.h>
 
-QT_BEGIN_HEADER
-
 namespace MeeGo {
 
 class QmLocksPrivate;
@@ -125,8 +123,6 @@ private:
 };
 
 } // namspace MeeGo
-
-QT_END_HEADER
 
 #endif /* QMLOCKS_H */
 

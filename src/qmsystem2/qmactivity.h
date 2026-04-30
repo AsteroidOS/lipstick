@@ -33,8 +33,6 @@
 #include <QtCore/qobject.h>
 #include "system_global.h"
 
-QT_BEGIN_HEADER
-
 namespace MeeGo {
 
 class QmActivityPrivate;
@@ -98,8 +96,6 @@ private:
 };
 
 } // MeeGo namespace
-
-QT_END_HEADER
 
 #endif /*QMACTIVITY_H*/
 
