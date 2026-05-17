@@ -11,7 +11,8 @@ PUBLICHEADERS += \
 
 HEADERS += \
     $$PWD/windowpixmapitem.h \
-    $$PWD/lipstickrecorder.h
+    $$PWD/lipstickrecorder.h \
+    $$PWD/asteroidgesturesextension.h
 
 SOURCES += \
     $$PWD/lipstickcompositor.cpp \
@@ -19,7 +20,11 @@ SOURCES += \
     $$PWD/lipstickcompositorprocwindow.cpp \
     $$PWD/lipstickcompositoradaptor.cpp \
     $$PWD/windowmodel.cpp \
-    $$PWD/windowpixmapitem.cpp
+    $$PWD/windowpixmapitem.cpp \
+    $$PWD/asteroidgesturesextension.cpp
+
+CONFIG += wayland-scanner
+WAYLANDSERVERSOURCES += $$PWD/../../wayland-protocols/asteroid-gestures-unstable-v1.xml
 
 DEFINES += QT_COMPOSITOR_QUICK
 

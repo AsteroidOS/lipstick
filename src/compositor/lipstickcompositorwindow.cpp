@@ -29,7 +29,7 @@ LipstickCompositorWindow::LipstickCompositorWindow(int windowId, const QString &
 : QWaylandQuickItem(), m_windowId(windowId), m_category(category),
   m_delayRemove(false), m_windowClosed(false), m_removePosted(false),
   m_interceptingTouch(false), m_mapped(false), m_processId(0),
-  m_focusOnTouch(false)
+  m_focusOnTouch(false), m_overridesSystemGestures(false)
 {
     setFlags(QQuickItem::ItemIsFocusScope | flags());
 
@@ -373,5 +373,19 @@ void LipstickCompositorWindow::setFocusOnTouch(bool focusOnTouch)
 
     m_focusOnTouch = focusOnTouch;
     emit focusOnTouchChanged();
+}
+
+bool LipstickCompositorWindow::overridesSystemGestures() const
+{
+    return m_overridesSystemGestures;
+}
+
+void LipstickCompositorWindow::setOverridesSystemGestures(bool enabled)
+{
+    if (m_overridesSystemGestures == enabled)
+        return;
+
+    m_overridesSystemGestures = enabled;
+    emit overridesSystemGesturesChanged();
 }
 
