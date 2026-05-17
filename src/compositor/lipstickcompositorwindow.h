@@ -34,6 +34,7 @@ class LIPSTICK_EXPORT LipstickCompositorWindow : public QWaylandQuickItem
     Q_PROPERTY(QString title READ title NOTIFY titleChanged)
     Q_PROPERTY(qint64 processId READ processId CONSTANT)
     Q_PROPERTY(qint16 windowFlags READ windowFlags NOTIFY windowFlagsChanged)
+    Q_PROPERTY(bool overridesSystemGestures READ overridesSystemGestures NOTIFY overridesSystemGesturesChanged)
 
     Q_PROPERTY(bool focusOnTouch READ focusOnTouch WRITE setFocusOnTouch NOTIFY focusOnTouchChanged)
 
@@ -62,6 +63,9 @@ public:
     bool focusOnTouch() const;
     void setFocusOnTouch(bool focusOnTouch);
 
+    bool overridesSystemGestures() const;
+    void setOverridesSystemGestures(bool enabled);
+
     QVariantMap windowProperties();
 
 protected:
@@ -81,6 +85,7 @@ signals:
     void committed();
     void focusOnTouchChanged();
     void windowFlagsChanged();
+    void overridesSystemGesturesChanged();
 
 private slots:
     void handleTouchCancel();
@@ -110,6 +115,7 @@ private:
     bool m_mapped : 1;
     bool m_noHardwareComposition: 1;
     bool m_focusOnTouch : 1;
+    bool m_overridesSystemGestures : 1;
     QVariant m_data;
     QVector<QQuickItem *> m_refs;
 };

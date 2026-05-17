@@ -39,6 +39,7 @@ class LipstickCompositorWindow;
 class LipstickCompositorProcWindow;
 class QOrientationSensor;
 class LipstickRecorderManager;
+class AsteroidGesturesManager;
 
 class LIPSTICK_EXPORT LipstickCompositor : public QWaylandQuickCompositor
 {
@@ -241,6 +242,7 @@ private:
     QWaylandOutput *m_output;
     QWaylandXdgShell *m_xdgShell;
     QWaylandQtWindowManager *m_wm;
+    AsteroidGesturesManager *m_gesturesManager;
 
     Maemo::Timed::Interface *m_timedDbus;
     bool m_ambientModeEnabled;

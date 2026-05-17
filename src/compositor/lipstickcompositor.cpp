@@ -30,6 +30,7 @@
 #include "lipstickcompositor.h"
 #include "lipstickcompositoradaptor.h"
 #include "lipsticksettings.h"
+#include "asteroidgesturesextension.h"
 #include <qpa/qwindowsysteminterface.h>
 #include <private/qguiapplication_p.h>
 #include <QtGui/qpa/qplatformintegration.h>
@@ -76,6 +77,8 @@ LipstickCompositor::LipstickCompositor()
 
     m_wm = new QWaylandQtWindowManager(this);
     connect(m_wm, &QWaylandQtWindowManager::openUrl, this, &LipstickCompositor::openUrl);
+
+    m_gesturesManager = new AsteroidGesturesManager(this);
 
     setRetainedSelectionEnabled(true);
 
