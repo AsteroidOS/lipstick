@@ -616,11 +616,18 @@ void LipstickCompositor::reactOnDisplayStateChanges(MeeGo::QmDisplayState::Displ
     }
 
     if (state == MeeGo::QmDisplayState::On) {
-        m_window->setVisible(true);
+        if (!m_updatesEnabled && !ambientEnabled()) {
+            setUpdatesEnabled(true);
+        } else {
+            m_window->setVisible(true);
+        }
         emit displayOn();
     } else if (state == MeeGo::QmDisplayState::Off) {
         QCoreApplication::postEvent(this, new QTouchEvent(QEvent::TouchCancel));
         emit displayOff();
+        if (!ambientEnabled()) {
+            setUpdatesEnabled(false);
+        }
     }
 
     bool changeInDimming = (state == MeeGo::QmDisplayState::Dimmed) != (m_currentDisplayState == MeeGo::QmDisplayState::Dimmed);
