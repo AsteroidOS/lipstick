@@ -14,7 +14,6 @@
 ****************************************************************************/
 
 #include <dbus/dbus.h>
-#include <policy/resource-set.h>
 #include <linux/input.h>
 #include <QGuiApplication>
 #include "homewindow.h"
@@ -31,8 +30,6 @@ VolumeControl::VolumeControl(QObject *parent) :
     QObject(parent),
     window(0),
     pulseAudioControl(new PulseAudioControl(this)),
-    hwKeyResource(new ResourcePolicy::ResourceSet("event")),
-    hwKeysAcquired(false),
     volume_(0),
     maximumVolume_(0),
     audioWarning(new MDConfItem("/desktop/nemo/audiowarning", this)),
@@ -40,12 +37,6 @@ VolumeControl::VolumeControl(QObject *parent) :
     callActive_(false),
     mediaState_(MediaStateUnknown)
 {
-    hwKeyResource->setAlwaysReply();
-    hwKeyResource->addResourceObject(new ResourcePolicy::ScaleButtonResource);
-    connect(hwKeyResource, SIGNAL(resourcesGranted(QList<ResourcePolicy::ResourceType>)), this, SLOT(hwKeyResourceAcquired()));
-    connect(hwKeyResource, SIGNAL(lostResources()), this, SLOT(hwKeyResourceLost()));
-    hwKeyResource->acquire();
-
     setWarningAcknowledged(false);
     connect(audioWarning, SIGNAL(valueChanged()), this, SIGNAL(restrictedVolumeChanged()));
     connect(this, SIGNAL(maximumVolumeChanged()), this, SIGNAL(restrictedVolumeChanged()));
@@ -62,7 +53,6 @@ VolumeControl::VolumeControl(QObject *parent) :
 
 VolumeControl::~VolumeControl()
 {
-    hwKeyResource->deleteResource(ResourcePolicy::ScaleButtonType);
     delete window;
 }
 
@@ -171,24 +161,6 @@ void VolumeControl::setVolume(int volume, int maximumVolume)
     }
 }
 
-void VolumeControl::hwKeyResourceAcquired()
-{
-    hwKeysAcquired = true;
-}
-
-void VolumeControl::hwKeyResourceLost()
-{
-    hwKeysAcquired = false;
-    if (upPressed_) {
-        upPressed_ = false;
-        emit volumeKeyReleased(Qt::Key_VolumeUp);
-    }
-    if (downPressed_) {
-        downPressed_ = false;
-        emit volumeKeyReleased(Qt::Key_VolumeDown);
-    }
-}
-
 void VolumeControl::handleHighVolume(int safeLevel)
 {
     if (safeVolume_ != safeLevel) {
@@ -261,7 +233,7 @@ void VolumeControl::createWindow()
 
 bool VolumeControl::eventFilter(QObject *, QEvent *event)
 {
-    if (hwKeysAcquired && (event->type() == QEvent::KeyPress || event->type() == QEvent::KeyRelease)) {
+    if (event->type() == QEvent::KeyPress || event->type() == QEvent::KeyRelease) {
         QKeyEvent *keyEvent = static_cast<QKeyEvent *>(event);
         if ((keyEvent->key() == Qt::Key_VolumeUp || keyEvent->key() == Qt::Key_VolumeDown) && !keyEvent->isAutoRepeat()) {
             if (event->type() == QEvent::KeyPress) {

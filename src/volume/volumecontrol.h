@@ -25,10 +25,6 @@ class PulseAudioControl;
 class VolumeKeyListener;
 class MDConfItem;
 
-namespace ResourcePolicy {
-    class ResourceSet;
-}
-
 /*!
  * \class VolumeControl
  *
@@ -176,12 +172,6 @@ private slots:
     //! Sets the volume and maximum volume
     void setVolume(int volume, int maximumVolume);
 
-    //! An internal slot to handle the case when we got the hardware volume keys resource
-    void hwKeyResourceAcquired();
-
-    //! An internal slot to handle the case when we lost the hardware volume keys resource
-    void hwKeyResourceLost();
-
     //! Used to capture safe volume level and reset it to safe when needed.
     void handleHighVolume(int safeLevel);
 
@@ -204,12 +194,6 @@ private:
 
     //! PulseAudio volume controller
     PulseAudioControl *pulseAudioControl;
-
-    //! A resource object for access to the volume keys
-    ResourcePolicy::ResourceSet *hwKeyResource;
-
-    //! Whether to react to volume key presses
-    bool hwKeysAcquired;
 
     //! The current volume
     int volume_;
