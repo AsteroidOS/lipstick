@@ -141,7 +141,7 @@ SOURCES += \
 
 CONFIG += link_pkgconfig mobility qt warn_on depend_includepath qmake_cache target_qt
 CONFIG -= link_prl
-PKGCONFIG += mlite6 mce mce-qt6 keepalive dbus-1 dbus-glib-1 libresourceqt6 ngf-qt6 libsystemd dsme_dbus_if thermalmanager_dbus_if usb-moded-qt6 egl
+PKGCONFIG += mlite6 mce mce-qt6 keepalive dbus-1 dbus-glib-1 ngf-qt6 libsystemd dsme_dbus_if thermalmanager_dbus_if usb-moded-qt6 egl
 
 LIBS += -lrt
 
