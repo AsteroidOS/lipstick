@@ -16,3 +16,5 @@ configure-stamp
 build-stamp
 .project
 .cproject
+
+build
